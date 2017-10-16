@@ -1,3 +1,6 @@
-h1 {
-    color: purple;
+body {
+    font-family: 'PT Sans Narrow', Arial, Tahoma, San-francis, sans-serif;
+    font-size: 14px;
+    color: white;
+    line-height: 1.4;
 }
