@@ -3,4 +3,6 @@ body {
     font-size: 14px;
     color: white;
     line-height: 1.4;
+    text-transform: uppercase;
+    background: black;
 }
