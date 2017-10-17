@@ -32,7 +32,7 @@
         </nav>
         <div class="login">
             <img src="img/login.svg">
-            <a href="#">
+            <a href="#" class="login">
                 <span>Вход</span>
             </a>
         </div>
@@ -68,6 +68,12 @@
                 </div>
                 <div class="photo">
                     <h3>Фотогалерея</h3>
+                    <div class="photogallery">
+                        <img src="img/photo1.jpg" alt="">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                    </div>
                     <button type="button" class="btn btn-link">Назад</button>
                     <button type="button" class="btn btn-link">Вперед</button>
                 </div>
@@ -75,12 +81,37 @@
             <div class="info">
                 <div class="contacts">
                     <h3>Контактная информация</h3>
+                    <div>
+                        <p>Барбершоп &laquo;Бородинский&raquo;</p>
+                        <p>Адрес: г. Санкт-Петербург, б. Конюшенная, д. 19/8</p>
+                        <p>Телефон: +7 (495) 666-02-66</p>
+                    </div>
+                    <div>
+                        <p>Время работы:</p>
+                        <p>Пн—Пт: с 10:00 до 22:00</p>
+                        <p>Сб—Вс: с 10:00 до 19:00</p>
+                    </div>
                     <a class="btn" href="#">Как проехать</a>
                     <a class="btn" href="#">Обратная связь</a>
                 </div>
                 <div class="form">
-                    <h3>Записаться</h3>        
-                    <button type="button" class="btn btn-link">Отправить</button>
+                    <h3>Записаться</h3>
+                    <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+                    <form class="feedback-form" action="/mail" method="post">
+                        <div class="feedback-form-group">
+                            <label for="data">Дата</label>
+                            <input type="" name="data" id="data">
+                        </div>
+                        <div class="feedback-form-group">
+                            <label for="fullname">Ваше имя</label>
+                            <input type="text" name="fullname" id="fullname">
+                        </div>
+                        <div class="feedback-form-group">
+                            <label for="phone">Телефон</label>
+                            <input type="text" name="phone" id="phone">
+                        </div>
+                        <input type="submit" class="btn" value="Отправить">
+                    </form>
                 </div>
             </div>
         </div>
