@@ -102,16 +102,20 @@
                         <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
                         <form class="feedback-form" action="/mail" method="post">
                             <div class="feedback-form-group">
-                                <label for="data">Дата</label>
-                                <input type="date" name="data" id="data">
-							</div>
+                                <label for="date">Дата</label>
+                                <input type="date" name="date" id="date" placeholder="08.10.2017">
+                            </div>
+                            <div class="feedback-form-group">
+                                <label for="time">Время</label>
+                                <input type="time" name="time" id="time" placeholder="10:00">
+                            </div>
                             <div class="feedback-form-group">
                                 <label for="fullname">Ваше имя</label>
-                                <input type="text" name="fullname" id="fullname">
+                                <input type="text" name="fullname" id="fullname" placeholder="Борода">
 							</div>
                             <div class="feedback-form-group">
                                 <label for="phone">Телефон</label>
-                                <input type="text" name="phone" id="phone">
+                                <input type="tel" name="phone" id="phone" placeholder="+7 123 456-78-90">
 							</div>
                             <button type="submit" class="btn">Отправить</button>
 						</form>
