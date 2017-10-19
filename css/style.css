@@ -1,8 +1,22 @@
-body {
-    font-family: 'PT Sans Narrow', Arial, Tahoma, San-francis, sans-serif;
-    font-size: 14px;
-    color: white;
-    line-height: 1.4;
+* {
     text-transform: uppercase;
-    background: black;
+    text-decoration: none;
+    color: white;
+    margin: 0 auto;
+}
+body {
+    font-family: 'PT Sans Narrow', Arial, Tahoma, SF, sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+    background: url("img/bg-img.png") center no-repeat;
+    background-size: cover;
+}
+header {
+    background-color: black;
+    height: 75px;
+}
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
 }
