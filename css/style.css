@@ -2,7 +2,6 @@
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
-    color: white;
     margin: 0 auto;
     box-sizing: border-box;
 }
@@ -10,18 +9,33 @@ body {
     font-family: 'PT Sans Narrow', Arial, Tahoma, SF, sans-serif;
     font-size: 14px;
     line-height: 1.4;
+    color: white;
     background: url("img/bg-img.png") center no-repeat;
     background-size: cover;
 }
-.container {
-    width: 100%;
-    max-width: 960px;
-    margin: 0 auto;
-}
 header {
     background-color: black;
-    height: 75px;
     font-size: 16px;
+}
+footer {
+    background-color: #202020;
+}
+h2 {
+    font-size: 30px;
+    margin: 0 0 15px 0;
+}
+a, button {
+    color: white;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.container {
+    width: 100%;
+    max-width: 940px;
+    margin: 0 auto;
 }
 .navbar {
     width: 70%;
@@ -44,9 +58,75 @@ ul.nav>li {
 }
 .login>a {
     padding: 26px 0;
-    background: url(img/login.png) 25px no-repeat;
+    background: url("img/login.png") 25px no-repeat;
 }
 .logo {
     text-align: center;
     margin: 60px 0;
+}
+.advantages {
+    margin: 0 0 20px 0;
+}
+.advantages-item {
+    width: 33%;
+    float: left;
+    padding: 0 6px;
+    text-align: center;
+}
+.advantages-item>p {
+    margin: 30px 0;
+    padding: 10px 35px;
+}
+.advantages-icon {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.info-wrapper {
+    background: url("img/bg-wr.jpg") no-repeat;
+    width: 100%;
+    margin: 50px 0;
+    color: black;
+}
+.news, .photo, .contacts, .form {
+    width: 50%;
+    float: left;
+    padding: 45px 80px;
+    line-height: calc(24/14);
+}
+.news, .contacts {
+    padding-right: 30px;
+}
+.btn {
+    width: 140px;
+    height: 43px;
+    background-color: black;
+    border: 0;
+    cursor: pointer;
+}
+a.btn {
+    display: inline-block;
+    padding: 9px 15px;
+    text-align: center;
+}
+.news-item, .contacts-item, .form>p {
+    margin: 0 0 23px 0;
+}
+.photogallery {
+    text-align: center;
+    margin: 0 0 15px 0;
+}
+.photogallery>img {
+    border: 10px solid #ffffff;
+}
+.contacts>a:first-child {
+    margin: 0 20px 0 0;
+}
+.feedback-form>button {
+    width: 100%;
+    margin: 23px 0 0 0;
 }
