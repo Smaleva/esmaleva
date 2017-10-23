@@ -1,4 +1,6 @@
 * {
+    font-family: 'PT Sans Narrow', Arial, Tahoma, SF, sans-serif;
+    font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
@@ -6,8 +8,6 @@
     box-sizing: border-box;
 }
 body {
-    font-family: 'PT Sans Narrow', Arial, Tahoma, SF, sans-serif;
-    font-size: 14px;
     line-height: 1.4;
     color: white;
     background: url("img/bg-img.png") center no-repeat;
@@ -116,17 +116,38 @@ a.btn {
 .news-item, .contacts-item, .form>p {
     margin: 0 0 23px 0;
 }
+.news-item>time {
+    text-transform: none;
+}
 .photogallery {
-    text-align: center;
-    margin: 0 0 15px 0;
+    margin: 0 0 30px 0;
 }
 .photogallery>img {
-    border: 10px solid #ffffff;
+    border: 6px solid #ffffff;
 }
-.contacts>a:first-child {
-    margin: 0 20px 0 0;
+.photo>button, .contacts>a {
+    margin-right: 10px;
 }
 .feedback-form>button {
     width: 100%;
-    margin: 23px 0 0 0;
+    margin: 5px 0 0 0;
+}
+.feedback-form-group {
+    display: inline-block;
+    margin: 0 0 15px 0;
+}
+.feedback-form-group>label {
+    margin: 0 17px;
+}
+.feedback-form-group>input {
+    width: 140px;
+    border: 2px solid black;
+    padding: 10px;
+    display: block;
+}
+.feedback-form-group:nth-child(even) {
+    margin-left: 10px;
+}
+.feedback-form-group:nth-child(odd) {
+    margin-right: 10px;
 }
