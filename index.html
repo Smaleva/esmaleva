@@ -34,9 +34,7 @@
                     </nav>
                 </div>
                 <div class="login">
-                    <a href="#" class="login">
-                        <span>Вход</span>
-                    </a>
+                    <a href="#" class="login">Вход</a>
                 </div>
             </div>
 		</header>
@@ -65,14 +63,20 @@
                 <div class="info-wrapper clearfix">
                     <div class="news">
                         <h2>Новости</h2>
-                        <article class="news-item">
-                            <p>Нам наконец завезли ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
-                            <time>11 января</time>
-                        </article>
-                        <article class="news-item">
-                            <p>В нашей команде пополнение, Борис &laquo;Бритва&raquo; Стригунец, обладaтель множества титулов и наград пополнил наши стройные ряды</p>
-                            <time>18 января</time>
-                        </article>
+                        <div class="news-wrapper">
+                            <a href="#">
+                                <article class="news-item">
+                                    <p>Нам наконец завезли ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
+                                    <time>11 января</time>
+                                </article>
+                            </a>
+                            <a href="#">
+                                <article class="news-item">
+                                    <p>В нашей команде пополнение, Борис &laquo;Бритва&raquo; Стригунец, обладaтель множества титулов и наград пополнил наши стройные ряды</p>
+                                    <time>18 января</time>
+                                </article>
+                            </a>
+                        </div>
                         <a class="btn" href="#">Все новости</a>
 					</div>
                     <div class="photo">
@@ -104,19 +108,19 @@
                         <h2>Записаться</h2>
                         <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
                         <form class="feedback-form" action="/mail" method="post">
-                            <div class="feedback-form-group">
+                            <div class="form-group">
                                 <label for="date">Дата</label>
-                                <input type="date" name="date" id="date" placeholder="08.10.2017">
+                                <input type="text" name="date" id="date" placeholder="08.10.2017">
                             </div>
-                            <div class="feedback-form-group">
+                            <div class="form-group">
                                 <label for="time">Время</label>
-                                <input type="time" name="time" id="time" placeholder="10:00">
+                                <input type="text" name="time" id="time" placeholder="10:00">
                             </div>
-                            <div class="feedback-form-group">
+                            <div class="form-group">
                                 <label for="fullname">Ваше имя</label>
                                 <input type="text" name="fullname" id="fullname" placeholder="Борода">
 							</div>
-                            <div class="feedback-form-group">
+                            <div class="form-group">
                                 <label for="phone">Телефон</label>
                                 <input type="tel" name="phone" id="phone" placeholder="+7 123 456-78-90">
 							</div>

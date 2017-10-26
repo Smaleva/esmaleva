@@ -8,13 +8,13 @@
     box-sizing: border-box;
 }
 body {
-    line-height: 1.4;
-    color: white;
+    line-height: calc(24/14);
+    color: #fff;
     background: url("img/bg-img.png") center no-repeat;
     background-size: cover;
 }
 header {
-    background-color: black;
+    background-color: #000;
     font-size: 16px;
 }
 footer {
@@ -22,10 +22,11 @@ footer {
 }
 h2 {
     font-size: 30px;
-    margin: 0 0 15px 0;
+    margin: 0 0 12px;
+    line-height: calc(42/30);
 }
 a, button {
-    color: white;
+    color: #fff;
 }
 .clearfix::after {
     content: "";
@@ -41,15 +42,20 @@ a, button {
     width: 70%;
     float: left;
     display: block;
+    line-height: calc(20/16);
 }
 ul.nav {
     list-style: none;
     padding: 0;
 }
 ul.nav>li {
-    width: 20%;
-    float: left;
-    padding: 26px 0;
+    display: inline-block;
+    margin: 33px 0 27px 0;
+}
+ul.nav>li>a {
+    padding: 10px 14px;
+    font-size: 16px;
+    margin-right: 9px;
 }
 .login {
     width: 30%;
@@ -57,25 +63,27 @@ ul.nav>li {
     text-align: right;
 }
 .login>a {
-    padding: 26px 0;
-    background: url("img/login.png") 25px no-repeat;
+    background: url("img/login.png") 23px no-repeat;
+    padding: 11px 0;
+    margin: 20px 30px 13px;
+    font-size: 16px;
 }
 .logo {
     text-align: center;
     margin: 60px 0;
 }
 .advantages {
-    margin: 0 0 20px 0;
+    margin: 0 0 20px;
 }
 .advantages-item {
-    width: 33%;
+    width: 33.333333%;
     float: left;
     padding: 0 6px;
     text-align: center;
 }
 .advantages-item>p {
-    margin: 30px 0;
-    padding: 10px 35px;
+    margin: 17px 0;
+    padding: 10px;
 }
 .advantages-icon {
     display: block;
@@ -90,21 +98,24 @@ ul.nav>li {
     background: url("img/bg-wr.jpg") no-repeat;
     width: 100%;
     margin: 50px 0;
-    color: black;
+    color: #000;
 }
 .news, .photo, .contacts, .form {
     width: 50%;
     float: left;
-    padding: 45px 80px;
+    padding: 48px 74px 47px;
     line-height: calc(24/14);
 }
 .news, .contacts {
     padding-right: 30px;
 }
+.news-wrapper>a {
+    color: #000;
+}
 .btn {
     width: 140px;
     height: 43px;
-    background-color: black;
+    background-color: #000;
     border: 0;
     cursor: pointer;
 }
@@ -114,7 +125,7 @@ a.btn {
     text-align: center;
 }
 .news-item, .contacts-item, .form>p {
-    margin: 0 0 23px 0;
+    margin: 19px 0 26px;
 }
 .news-item>time {
     text-transform: none;
@@ -132,22 +143,22 @@ a.btn {
     width: 100%;
     margin: 5px 0 0 0;
 }
-.feedback-form-group {
+.form-group {
     display: inline-block;
     margin: 0 0 15px 0;
 }
-.feedback-form-group>label {
+.form-group>label {
     margin: 0 17px;
 }
-.feedback-form-group>input {
+.form-group>input {
     width: 140px;
-    border: 2px solid black;
+    border: 2px solid #000;
     padding: 10px;
     display: block;
 }
-.feedback-form-group:nth-child(even) {
+.form-group:nth-child(even) {
     margin-left: 10px;
 }
-.feedback-form-group:nth-child(odd) {
+.form-group:nth-child(odd) {
     margin-right: 10px;
 }
