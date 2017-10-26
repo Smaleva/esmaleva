@@ -110,7 +110,7 @@ ul.nav>li>a {
     padding-right: 30px;
 }
 .photo, .form {
-	box-shadow: 0 0 11px -3px;
+	background: url(img/shadow.png) no-repeat 10px;
 }
 .news-wrapper>a {
     color: #000;
@@ -177,4 +177,12 @@ a.btn {
 }
 .social>p, .copyright>p {
     margin: 0 0 20px;
-} 
+}
+.social-btn-link {
+    width: 43px;
+    height: 43px;
+    background-color: #000;
+}
+.social-btn-link:first-child {
+    background: url(img/vk.png) no-repeat;
+}
