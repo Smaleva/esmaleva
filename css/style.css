@@ -109,6 +109,9 @@ ul.nav>li>a {
 .news, .contacts {
     padding-right: 30px;
 }
+.photo, .form {
+	box-shadow: 0 0 11px -3px;
+}
 .news-wrapper>a {
     color: #000;
 }
@@ -163,3 +166,15 @@ a.btn {
 .form-group:nth-child(odd) {
     margin-right: 10px;
 }
+.find-us, .social, .copyright {
+    width: 33.333333%;
+    float: left;
+    margin: 65px 0 39px;
+}
+.social, .copyright {
+    text-align: center;
+    padding: 0 30px;
+}
+.social>p, .copyright>p {
+    margin: 0 0 20px;
+} 
