@@ -188,8 +188,8 @@ a.btn {
     background-image: url("img/vk.png");
 }
 .social-btn-link:nth-child(2) {
-    background-image: url("img/facebook.png");
+    background-image: url("img/fb.png");
 }
 .social-btn-link:last-child {
-    background-image: url("img/instagram.png");
+    background-image: url("img/inst.png");
 }
