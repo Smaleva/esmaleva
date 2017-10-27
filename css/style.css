@@ -181,8 +181,15 @@ a.btn {
 .social-btn-link {
     width: 43px;
     height: 43px;
-    background-color: #000;
+    display: inline-block;
+    background: #000 no-repeat 50%;
 }
 .social-btn-link:first-child {
-    background: url(img/vk.png) no-repeat;
+    background-image: url("img/vk.png");
+}
+.social-btn-link:nth-child(2) {
+    background-image: url("img/facebook.png");
+}
+.social-btn-link:last-child {
+    background-image: url("img/instagram.png");
 }
