@@ -17,6 +17,10 @@ header {
     background-color: #000;
     font-size: 16px;
 }
+header>div.container {
+    display: flex;
+    justify-content: space-between;
+}
 footer {
     background-color: #202020;
 }
@@ -39,9 +43,7 @@ a, button {
     margin: 0 auto;
 }
 .navbar {
-    width: 70%;
-    float: left;
-    display: block;
+    display: inline-block;
     line-height: calc(20/16);
 }
 ul.nav {
@@ -58,14 +60,16 @@ ul.nav>li>a {
     margin-right: 9px;
 }
 .login {
-    width: 30%;
-    float: right;
+    display: inline-block;
     text-align: right;
 }
+.login, .navbar {
+    margin: 0;
+}
 .login>a {
-    background: url("img/sprites.png") -30px -35px no-repeat;
-    padding: 11px 0;
-    margin: 20px 30px 13px;
+    background: url(img/sprites.png) -50px -35px no-repeat;
+    padding: 11px 30px;
+    margin: 20px 10px 13px;
     font-size: 16px;
 }
 .logo {
@@ -74,10 +78,10 @@ ul.nav>li>a {
 }
 .advantages {
     margin: 0 0 20px;
+    display: flex;
+    justify-content: space-around;
 }
 .advantages-item {
-    width: 33.333333%;
-    float: left;
     padding: 0 6px;
     text-align: center;
 }
@@ -96,14 +100,13 @@ ul.nav>li>a {
 }
 .info-wrapper {
     background: url("img/bg-wr.jpg") no-repeat;
-    width: 100%;
+    display: flex;
+    justify-content: space-around;
     margin: 50px 0;
     color: #000;
 }
 .news, .photo, .contacts, .form {
-    width: 50%;
-    float: left;
-    padding: 48px 74px 47px;
+    padding: 48px 74px 40px;
     line-height: calc(24/14);
 }
 .news, .contacts {
@@ -141,7 +144,7 @@ a.btn {
     border: 6px solid #ffffff;
 }
 .photo>button, .contacts>a {
-    margin-right: 10px;
+    margin-right: 7px;
 }
 .feedback-form>button {
     width: 100%;
