@@ -4,7 +4,7 @@
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
-    margin: 0 auto;
+    margin: 0;
     box-sizing: border-box;
 }
 body {
@@ -17,7 +17,7 @@ header {
     background-color: #000;
     font-size: 16px;
 }
-header>div.container {
+.flex {
     display: flex;
     justify-content: space-between;
 }
@@ -78,8 +78,6 @@ ul.nav>li>a {
 }
 .advantages {
     margin: 0 0 20px;
-    display: flex;
-    justify-content: space-around;
 }
 .advantages-item {
     padding: 0 6px;
@@ -90,7 +88,7 @@ ul.nav>li>a {
     padding: 10px;
 }
 .advantages-icon {
-    display: block;
+    margin: 0 auto;
     width: 20px;
     height: 20px;
     background-color: #fff;
@@ -100,14 +98,17 @@ ul.nav>li>a {
 }
 .info-wrapper {
     background: url("img/bg-wr.jpg") no-repeat;
-    display: flex;
-    justify-content: space-around;
     margin: 50px 0;
     color: #000;
+}
+.advantages, .info-wrapper {
+    display: flex;
+    justify-content: space-around;
 }
 .news, .photo, .contacts, .form {
     padding: 48px 74px 40px;
     line-height: calc(24/14);
+    width: 50%;
 }
 .news, .contacts {
     padding-right: 30px;
@@ -170,13 +171,11 @@ a.btn {
     margin-right: 10px;
 }
 .find-us, .social, .copyright {
-    width: 33.333333%;
-    float: left;
     margin: 65px 0 39px;
+    padding: 0 30px;
 }
 .social, .copyright {
     text-align: center;
-    padding: 0 30px;
 }
 .social>p, .copyright>p {
     margin: 0 0 20px;
