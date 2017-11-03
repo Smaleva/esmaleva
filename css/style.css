@@ -198,3 +198,10 @@ a.btn {
     background-image: url("img/sprites.png");
     background-position: -42px 11px;
 }
+.shop-back {
+    background: url("img/bg-catalog.png");
+}
+.filter-catalog {
+    display: flex;
+    justify-content: space-between;
+}
