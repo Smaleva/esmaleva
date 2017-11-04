@@ -23,6 +23,7 @@ header {
 }
 footer {
     background-color: #202020;
+    color: #fff;
 }
 h2 {
     font-size: 30px;
@@ -200,8 +201,31 @@ a.btn {
 }
 .shop-back {
     background: url("img/bg-catalog.png");
+    color: #000;
 }
 .filter-catalog {
     display: flex;
     justify-content: space-between;
+    margin: 55px 0;
+}
+.filter {
+    width: 20%;
+}
+.catalog {
+    width: 80%;
+}
+.catalog>ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.catalog-item {
+    background-color: #fff;
+    width: 31%;
+    margin-bottom: 20px;
+    box-shadow: 0 0 7px #3A3A3A;
+}
+.catalog-item>a>img {
+    width: 100%;
 }
