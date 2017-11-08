@@ -218,8 +218,6 @@ a.btn {
     color: #aba9a7;
 }
 .filter-catalog {
-    display: flex;
-    justify-content: space-between;
     margin: 55px 0;
 }
 .filter {
@@ -231,9 +229,7 @@ a.btn {
 }
 .catalog>ul {
     list-style: none;
-    display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     padding: 0;
 }
 .catalog-item {
@@ -288,8 +284,6 @@ a.buy {
 }
 .item-wrapper {
     margin: 55px 0;
-    display: flex;
-    justify-content: space-between;
 }
 .item-photo {
     width: 50%;
@@ -302,14 +296,7 @@ a.buy {
     box-shadow: 0 0 7px #949494;
     width: 100%;
 }
-.all-img {
-    margin: 20px 0;
-    display: flex;
-    justify-content: space-between;
-}
-.amount-code {
-    display: flex;
-    justify-content: space-between;
+.all-img, .amount-code {
     margin: 20px 0;
 }
 .desc {
