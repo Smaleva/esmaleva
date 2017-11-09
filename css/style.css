@@ -43,22 +43,15 @@ a, button {
     max-width: 940px;
     margin: 0 auto;
 }
-.navbar {
-    display: inline-block;
+.navbar-menu {
     line-height: calc(20/16);
 }
-ul.nav {
-    list-style: none;
-    padding: 0;
-}
-ul.nav>li {
+.navbar-menu a {
     display: inline-block;
     margin: 33px 0 27px 0;
-}
-ul.nav>li>a {
     padding: 10px 14px;
-    font-size: 16px;
     margin-right: 9px;
+    font-size: 16px;
 }
 .login {
     display: inline-block;
@@ -226,11 +219,10 @@ a.btn {
 .catalog {
     width: 80%;
     margin-left: 50px;
-}
-.catalog>ul {
-    list-style: none;
     flex-wrap: wrap;
-    padding: 0;
+}
+.catalog div.flex {
+    flex-wrap: wrap;
 }
 .catalog-item {
     background-color: #fff;
@@ -238,7 +230,7 @@ a.btn {
     margin-bottom: 20px;
     box-shadow: 0 0 7px #949494;
 }
-.catalog-item>a>img {
+.catalog-item img {
     width: 100%;
 }
 fieldset {
