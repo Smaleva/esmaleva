@@ -43,28 +43,26 @@ a, button {
     max-width: 940px;
     margin: 0 auto;
 }
+.shop-logo {
+    padding: 25px 10px;
+    margin: 14px 0 0;
+}
 .navbar-menu {
     line-height: calc(20/16);
 }
 .navbar-menu a {
-    display: inline-block;
-    margin: 33px 0 27px 0;
+    margin: 33px 9px 27px 0;
     padding: 10px 14px;
-    margin-right: 9px;
     font-size: 16px;
-}
-.login {
-    display: inline-block;
-    text-align: right;
 }
 .login, .navbar {
     margin: 0;
 }
-.login>a {
+.login a {
     background: url(img/sprites.png) -50px -35px no-repeat;
-    padding: 11px 30px;
-    margin: 20px 10px 13px;
     font-size: 16px;
+    margin: 31px 0 0;
+    padding: 10px 23px;
 }
 .logo {
     text-align: center;
@@ -91,7 +89,7 @@ a, button {
     transform: rotate(45deg);
 }
 .info-wrapper {
-    background: url("img/bg-wr.jpg") no-repeat;
+    background: url("img/bg-wr1.jpg") #f9f6f3;
     margin: 50px 0;
     color: #000;
 }
@@ -119,8 +117,6 @@ a, button {
     background-color: #000;
     border: 0;
     cursor: pointer;
-}
-a.btn {
     display: inline-block;
     padding: 9px 15px;
     text-align: center;
@@ -146,7 +142,6 @@ a.btn {
     margin: 5px 0 0 0;
 }
 .form-group {
-    display: inline-block;
     margin: 0 0 15px 0;
 }
 .form-group>label {
@@ -177,7 +172,6 @@ a.btn {
 .social-btn-link {
     width: 43px;
     height: 43px;
-    display: inline-block;
     background: #000 no-repeat 50%;
 }
 .social-btn-link:first-child {
@@ -193,7 +187,7 @@ a.btn {
     background-position: -42px 11px;
 }
 .shop-back {
-    background: url("img/bg-catalog.png");
+    background: url("img/bg-wr1.jpg") #f9f6f3;
     color: #000;
 }
 .breadcrumbs a {
@@ -230,8 +224,12 @@ a.btn {
     margin-bottom: 20px;
     box-shadow: 0 0 7px #949494;
 }
-.catalog-item img {
+.catalog-item-img {
     width: 100%;
+}
+.catalog-item a, .catalog-item span, .social-btn-link, 
+.form-group, .login a, .navbar-menu a, .shop-logo {
+    display: inline-block;
 }
 fieldset {
     border: none;
@@ -245,7 +243,7 @@ legend {
 .producer-item, .view-item {
     margin: 16px 0;
 }
-.producer-item>label, .view-item>label {
+.producer-item label, .view-item label {
     margin-left: 15px;
 }
 .catalog-item-description {
@@ -254,12 +252,12 @@ legend {
 .item-price-buy {
     margin-top: 10px;
 }
-.item-price-buy>span {
-    display: inline-block;
-    width: 60%;
+.item-price-buy span {
+    width: 62%;
     background-color: #e5e5e5;
     padding: 14px;
     text-align: center;
+    float: left;
 }
 a.buy {
     width: 38%;
@@ -312,4 +310,34 @@ h1.title {
     margin: 48px 0 20px 0;
     font-size: 30px;
     line-height: calc(42/30);
+}
+.auth {
+    background: #000;
+}
+.auth-window {
+    background: url("img/bg-wr1.jpg") #f9f6f3;
+    color: #000;
+    margin: 100px auto;
+    width: 24%;
+    padding: 30px 80px 50px;
+}
+.auth-window h2, .auth-window p {
+    margin: 15px 0;
+}
+.auth-form {
+    flex-wrap: wrap;
+}
+.auth-form-group {
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px 15px;
+    border: 2px solid #000;
+    color: #000;
+}
+.auth-remember-me {
+    width: 100%;
+    margin: 10px 0;
+}
+.auth-form button {
+    width: 100%;
 }

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Войти</title>
+		<link href="css/style.css" type="text/css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+	</head>
+<body class="auth">
+    <main class="auth-window">
+        <h2>Личный кабинет</h2>
+        <p>Введите пожалуйста свой логин и пароль</p>
+        <form class="flex auth-form" method="post" action="index.html">
+            <input class="auth-form-group" type="text" placeholder="Логин" name="login">
+            <input class="auth-form-group" type="password" placeholder="Пароль" name="password">
+            <div class="auth-remember-me">
+                <input class="remember" type="checkbox" id="remember">
+                <label for="remember">Запомните меня</label>
+                <a class="forgot-pass" href="#">Я забыл пароль!</a>
+            </div>
+            <button type="submit" class="btn">Войти</button>
+        </form>
+    </main>
+</body>
+</html>
