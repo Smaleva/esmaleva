@@ -319,12 +319,13 @@ legend {
     opacity: 0;
     visibility: hidden;
     position: fixed;
-    left: 37%;
-    top: 37%;
+    left: 50%;
+    top: 50%;
     background: url("img/bg-wr1.jpg") #f9f6f3;
     color: #000;
     width: 25%;
     padding: 54px 80px;
+    margin: -13%;
     transition: opacity .3s linear;
     z-index: 1;
 }
@@ -348,6 +349,22 @@ legend {
 .auth-form button {
     width: 100%;
 }
+.close-window {
+    position: absolute;
+    right: -6%;
+    top: 2%;
+    width: 21px;
+    height: 21px;
+    background: url('img/sprites.png') -103px -2px no-repeat;
+    border: 0;
+    cursor: pointer;
+}
+.auth-form input[type="text"] {
+    background: url('img/sprites.png') 287px -92px no-repeat;
+}
+.auth-form input[type="password"] {
+    background: url('img/sprites.png') 287px -145px no-repeat;
+}
 .open {
     opacity: 1;
     visibility: visible;
@@ -357,6 +374,6 @@ legend {
     height: 100%;
     background: #191f26;
     z-index: 2;
-    position: fixed;
     opacity: 0.5;
+    position: relative;
 }
