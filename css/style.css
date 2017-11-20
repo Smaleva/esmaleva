@@ -326,6 +326,7 @@ legend {
     width: 25%;
     padding: 54px 80px;
     transition: opacity .3s linear;
+    z-index: 1;
 }
 .auth-window h2, .auth-window p {
     margin: 15px 0;
@@ -350,4 +351,12 @@ legend {
 .open {
     opacity: 1;
     visibility: visible;
+}
+.shadow {
+    width: 100%;
+    height: 100%;
+    background: #191f26;
+    z-index: 2;
+    position: fixed;
+    opacity: 0.5;
 }
