@@ -110,6 +110,7 @@ a, button {
 }
 .news-wrapper>a {
     color: #000;
+    display: inline-block;
 }
 .btn {
     width: 140px;
@@ -259,7 +260,7 @@ legend {
     text-align: center;
     float: left;
 }
-a.buy {
+.buy {
     width: 38%;
     padding: 14px;
     height: auto;
@@ -306,7 +307,7 @@ a.buy {
 .consist-wrapper {
     margin: 30px 0;
 }
-h1.title {
+.title {
     margin: 48px 0 20px 0;
     font-size: 30px;
     line-height: calc(42/30);
@@ -318,8 +319,8 @@ h1.title {
     opacity: 0;
     visibility: hidden;
     position: fixed;
-    left: 40%;
-    top: 50%;
+    left: 37%;
+    top: 37%;
     background: url("img/bg-wr1.jpg") #f9f6f3;
     color: #000;
     width: 25%;
