@@ -10,4 +10,5 @@ link.addEventListener('click', function(event) {
 
 closeModal.addEventListener('click', function() {
     modal.classList.remove('open');
+    document.querySelector('body').classList.remove('shadow');
 });
