@@ -140,6 +140,10 @@ a, button {
 .photo button, .contacts a {
     margin-right: 17px;
 }
+.photo button:last-child {
+    float: right;
+    margin: 0;
+}
 .feedback-form button {
     width: 100%;
     margin: 5px 0 0 0;
@@ -211,10 +215,10 @@ a, button {
     margin: 55px 0;
 }
 .filter {
-    width: 20%;
+    width: 25%;
 }
 .catalog {
-    width: 80%;
+    width: 75%;
     margin-left: 50px;
     flex-wrap: wrap;
 }
@@ -227,7 +231,7 @@ a, button {
     margin-bottom: 20px;
     box-shadow: 0 0 7px #949494;
 }
-.catalog-item-img {
+.catalog-item img {
     width: 100%;
 }
 .catalog-item a, .catalog-item span, .social-btn-link, 
@@ -245,9 +249,6 @@ legend {
 }
 .producer-item, .view-item {
     margin: 16px 0;
-}
-.producer-item label, .view-item label {
-    margin-left: 15px;
 }
 .catalog-item-description {
     padding: 16px;
@@ -367,15 +368,15 @@ legend {
 .auth-form input[type="password"] {
     background: url('img/sprites.png') 287px -145px no-repeat;
 }
-.auth-remember-me input{
+.auth-remember-me input, .producer-item input, .view-item input {
     display: none;
 }
-.auth-remember-me label {
+.auth-remember-me label, .producer-item label, .view-item label {
     position: relative;
     padding: 3px 0 0 30px;
     cursor: pointer;
 }
-.auth-remember-me label::after {
+.auth-remember-me label::after, .producer-item label::after, .view-item label::after {
     content: "";
     position: absolute;
     top: 0;
@@ -384,8 +385,14 @@ legend {
     height: 20px;
     border: 2px solid #000;
 }
-.auth-remember-me input:checked + label::after {
+.view-item label::after {
+    border-radius: 20px;
+}
+.auth-remember-me input:checked + label::after, .producer-item input:checked + label::after {
     background: url('img/sprites.png') -49px -99px no-repeat;
+}
+.view-item input:checked + label::after {
+    background: url('img/sprites.png') -48px -147px no-repeat;
 }
 .forgot-pass {
     color: #000;
